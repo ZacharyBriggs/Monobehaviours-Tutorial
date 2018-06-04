@@ -189,7 +189,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 158420026}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 10.99, z: 0.17}
+  m_LocalPosition: {x: 0, y: 19.84, z: 0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -370,8 +370,9 @@ GameObject:
   - component: {fileID: 1836852320}
   - component: {fileID: 1836852319}
   - component: {fileID: 1836852323}
+  - component: {fileID: 1836852324}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -454,6 +455,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c6e40c853245e4e825d019b73ace54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 2116823954}
+  Speed: 2
+--- !u!143 &1836852324
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836852318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2116823948
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a844502f41e7504f8b3507b901260da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 15
 --- !u!143 &2116823950
 CharacterController:
   m_ObjectHideFlags: 0

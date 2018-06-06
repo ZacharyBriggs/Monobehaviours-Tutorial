@@ -18,7 +18,9 @@ public class EnemyBehaviour : MonoBehaviour
 	void Update ()
 	{
 	    Vector3 dirToPlayer;
-	    dirToPlayer = player.transform.position - this.transform.position;
+	    dirToPlayer.x = player.transform.position.x - this.transform.position.x;
+	    dirToPlayer.y = 0;
+	    dirToPlayer.z = player.transform.position.z - this.transform.position.z;
         dirToPlayer.Normalize();
 	    transform.position += dirToPlayer * Speed * Time.deltaTime;
 	}

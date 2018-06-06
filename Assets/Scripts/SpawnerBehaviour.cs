@@ -25,7 +25,7 @@ public class SpawnerBehaviour : MonoBehaviour
 	        float spawn_angle = Random.Range(0, 2 * Mathf.PI);
             Vector3 spawn_direction = new Vector3(Mathf.Sin(spawn_angle), 0, Mathf.Cos(spawn_angle));
 	        spawn_direction *= spawn_radius;
-	        Vector3 spawn_point = player.transform.position + spawn_direction;
+	        Vector3 spawn_point = this.transform.position + spawn_direction;
 	        Instantiate(enemy_prefab, spawn_point, Quaternion.identity);
 	    }
 	}
